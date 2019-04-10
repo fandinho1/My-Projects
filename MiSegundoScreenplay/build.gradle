@@ -1,0 +1,32 @@
+defaultTasks 'clean','test','aggregate'
+
+apply plugin: 'java'
+
+repositories {
+    jcenter()
+}
+
+buildscript {
+    repositories {
+        mavenLocal()
+        jcenter()
+    }
+    dependencies {
+        classpath("net.serenity-bdd:serenity-gradle-plugin:2.0.41")     
+    }
+}
+
+apply plugin: 'net.serenity-bdd.aggregator'
+
+dependencies {
+    implementation 'com.google.guava:guava:23.0'
+    testImplementation 'junit:junit:4.12'
+	compile group: 'net.serenity-bdd', name: 'serenity-core', version: '2.0.41'
+	compile group: 'net.serenity-bdd', name: 'serenity-junit', version: '2.0.41'
+	compile group: 'net.serenity-bdd', name: 'serenity-cucumber', version: '1.9.31'
+	compile group: 'net.serenity-bdd', name: 'serenity-screenplay', version: '2.0.41'
+	compile group: 'net.serenity-bdd', name: 'serenity-screenplay-webdriver', version: '2.0.41'
+    
+}
+
+gradle.startParameter.continueOnFailure = true

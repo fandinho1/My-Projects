@@ -1,0 +1,307 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<!--[if IE 7]>
+<!--<link rel="stylesheet" href="font-awesome/css/font-awesome-ie7.min.css">-->
+
+<link rel="stylesheet" href="fontawesome-free-5.3.1-web/css/all.css">
+<link rel="stylesheet" href="fontawesome-free-5.3.1-web/css/v4-shims.css">
+
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><link rel="stylesheet" href="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.css">
+<link rel="stylesheet" href="chartist/dist/chartist.min.css">
+<script src="chartist/dist/chartist.min.js"></script>
+<script src="chartist/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.js"></script>
+<!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.10.19/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.10.19/datatables.min.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="datatables/1.10.19/datatables.bootstrap4.min.js"></script>
+<link type="text/css" href="datatables/1.10.19/datatables.bootstrap4.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/><!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname"></span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="b57ed419a81704a213bf169edf6a8f2e0fa3977677a55e52d025582ffbdeceb7.html">Search In Yahoo With Data From Feature</a></span>
+                > <span class="truncate-60"><a
+                    href="81554d149942c77c157f613af6047dd05abb04f01bffb9b5ea82fc69a25b1840.html">Search in yahoo </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="fa fa-check-square-o"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="fa fa-book"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 04-04-2019 08:52</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fa fa-2x fa-comments-o"></i>
+                                    <span class="story-header-title">Search In Yahoo With Data From Feature </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                I want to search a word in yahoo
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                            <p class="tag">
+                                <span class="badge tag-badge" style="background:default;"
+                                    <i class="fa fa-tag"></i>&nbsp;<a class="tagLink" style="background:default;" href="095fb70a5155b4b01be72b93f1b4c51cab27094796115f0e543dc2649da60779.html">Smoketest
+                                    (tag)</a>
+                                </span>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><i class='fa fa-times-circle failure-icon fa-2x' title='FAILURE'></i></span>
+                            <span class="test-case-title">
+                                <span class="failing-color">Search in yahoo
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+    <div class="story-title">
+        <h3>Scenario:</h3>
+        <div class="scenario">Given Goku is in the site yahoo<br>When He search the word<br><table class='embedded'><thead><th>cadenaUno</th><th>cadenaDos</th></thead><tbody><tr><td>&lt;word&gt;</td><td>&lt;wordtwo&gt;</td></tr></tbody></table><br>Then He verify that the word "&lt;expectedValue&gt;" is in the results</div>
+    </div>
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+    <div style="display:block">
+        <div class="table">
+            <div class="row">
+                <div class="col-sm-10" style="padding-left:1.5em; padding-top:0.5em; padding-bottom:0.5em;">
+                    <span class="error-message error-message-title">Assertion error: The phrase found does not match the search - org.openqa.selenium.NoSuchElementException: Expected condition failed: waiting for By.name: p to be displayed (tried for 5 second(s) with 100 milliseconds interval)Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'System info: host: 'LAPTOP-L2D6D9IH', ip: '172.23.85.79', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'Driver info: driver.version: unknown</span>
+                </div>
+                <div class="col-sm-2">
+                    <a class="btn btn-warning details-button" data-toggle="collapse" href="#stacktraceModal-overall""
+                       role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><i class="far fa-eye"></i> More details</a>
+                </div>
+             </div>
+        </div>
+    <div>
+
+    <!-- Details Section -->
+    <div class="row stacktrace-details">
+      <div class="col">
+        <div class="collapse multi-collapse" id="stacktraceModal-overall">
+            <div class="card">
+                <div class="card-header">
+                    <h4>java.lang.AssertionError </h4>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <pre>com.yahoo.espanol.qa.miprimerabusqueda.stepsdefinitions.SearchWithYahooStepDefinition.heVerifyThatTheWordIsInTheResults(SearchWithYahooStepDefinition.java:54)<br />✽.He verify that the word "peliculas nuevas" is in the results(src/test/resources/features/SearchWithYahoo.feature:10)<br /></pre>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource6809966730050719720.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="c577d0c740c65d9e2040843980d343713c16b2c5364364ad34452965d3c403c7.png" title=" Example #1: {word=peliculas, wordtwo=nuevas, expectedValue=peliculas nuevas}" width="1366"/>
+                <img src="c577d0c740c65d9e2040843980d343713c16b2c5364364ad34452965d3c403c7.png" title=" Given Goku is in the site yahoo" width="1366"/>
+                <img src="c577d0c740c65d9e2040843980d343713c16b2c5364364ad34452965d3c403c7.png" title=" GokuFase3 opens the Yahoo home page" width="1366"/>
+                <img src="c577d0c740c65d9e2040843980d343713c16b2c5364364ad34452965d3c403c7.png" title=" Given Goku is in the site yahoo (completed)" width="1366"/>
+                <img src="c577d0c740c65d9e2040843980d343713c16b2c5364364ad34452965d3c403c7.png" title=" When He search the word
+| cadenaUno | cadenaDos |
+| peliculas | nuevas |" width="1366"/>
+                <img src="fe2605c5c440d72e654b0ca6dc515feb48be0bf32e72eef1ce70b413a33ba46f.png" title=" Gokufase3 look up something" width="1366"/>
+                <img src="fe2605c5c440d72e654b0ca6dc515feb48be0bf32e72eef1ce70b413a33ba46f.png" title=" GokuFase3 enters 'peliculas nuevas' into The search bar" width="1366"/>
+                <img src="8cc4a26623a89c1f653acf695bf050e1213b2ddac6465f8dcdcaa59438a75cc0.png" title=" GokuFase3 enters 'peliculas nuevas' into The search bar (completed)" width="1366"/>
+                <img src="8cc4a26623a89c1f653acf695bf050e1213b2ddac6465f8dcdcaa59438a75cc0.png" title=" GokuFase3 clicks on The search button" width="1366"/>
+                <img src="9666da0127dc4d2d0bdd2d245c7154a546fb57ba2349d578d671accf388cb61e.png" title=" GokuFase3 clicks on The search button (completed)" width="1366"/>
+                <img src="9666da0127dc4d2d0bdd2d245c7154a546fb57ba2349d578d671accf388cb61e.png" title=" Gokufase3 look up something (completed)" width="1366"/>
+                <img src="9666da0127dc4d2d0bdd2d245c7154a546fb57ba2349d578d671accf388cb61e.png" title=" When He search the word
+| cadenaUno | cadenaDos |
+| peliculas | nuevas | (completed)" width="1366"/>
+                <img src="9666da0127dc4d2d0bdd2d245c7154a546fb57ba2349d578d671accf388cb61e.png" title=" Then He verify that the word &quot;peliculas nuevas&quot; is in the results" width="1366"/>
+                <img src="9666da0127dc4d2d0bdd2d245c7154a546fb57ba2349d578d671accf388cb61e.png" title=" Then the result should be 'peliculas nuevas'" width="1366"/>
+                <img src="1ae09415f65621b5ac14e56f5099af2cbfcdf67bd4cc62b9486d9fd66528cf31.png" title=" Then the result should be 'peliculas nuevas' (completed)" width="1366"/>
+                <img src="d56a51379202fb094885728d99fa763248df5e744b55fa9bc31f3db64b23cecc.png" title=" Example #2: {word=tabu, wordtwo=bar, expectedValue=tabu bar}" width="1366"/>
+                <img src="d56a51379202fb094885728d99fa763248df5e744b55fa9bc31f3db64b23cecc.png" title=" Given Goku is in the site yahoo" width="1366"/>
+                <img src="d56a51379202fb094885728d99fa763248df5e744b55fa9bc31f3db64b23cecc.png" title=" GokuFase3 opens the Yahoo home page" width="1366"/>
+                <img src="d56a51379202fb094885728d99fa763248df5e744b55fa9bc31f3db64b23cecc.png" title=" Given Goku is in the site yahoo (completed)" width="1366"/>
+                <img src="d56a51379202fb094885728d99fa763248df5e744b55fa9bc31f3db64b23cecc.png" title=" When He search the word
+| cadenaUno | cadenaDos |
+| tabu | bar |" width="1366"/>
+                <img src="d56a51379202fb094885728d99fa763248df5e744b55fa9bc31f3db64b23cecc.png" title=" Gokufase3 look up something" width="1366"/>
+                <img src="e231634e7f2775358ab8fcea51fdc29aee04322c5cac52065d2c0ab3388dce76.png" title=" GokuFase3 enters 'tabu bar' into The search bar" width="1366"/>
+                <img src="f2778c9eda1b6ba6735c87ff3748537242043962f9bcd17cc4d62a68d680076d.png" title=" GokuFase3 enters 'tabu bar' into The search bar (completed)" width="1366"/>
+                <img src="f2778c9eda1b6ba6735c87ff3748537242043962f9bcd17cc4d62a68d680076d.png" title=" GokuFase3 clicks on The search button" width="1366"/>
+                <img src="acd7590219961780bf399a7aef46f4d183916ab480d1eca35d03aada3f8ea35a.png" title=" GokuFase3 clicks on The search button (completed)" width="1366"/>
+                <img src="acd7590219961780bf399a7aef46f4d183916ab480d1eca35d03aada3f8ea35a.png" title=" Gokufase3 look up something (completed)" width="1366"/>
+                <img src="acd7590219961780bf399a7aef46f4d183916ab480d1eca35d03aada3f8ea35a.png" title=" When He search the word
+| cadenaUno | cadenaDos |
+| tabu | bar | (completed)" width="1366"/>
+                <img src="acd7590219961780bf399a7aef46f4d183916ab480d1eca35d03aada3f8ea35a.png" title=" Then He verify that the word &quot;tabu bar&quot; is in the results" width="1366"/>
+                <img src="acd7590219961780bf399a7aef46f4d183916ab480d1eca35d03aada3f8ea35a.png" title=" Then the result should be 'tabu bar'" width="1366"/>
+                <img src="2690eaf25cf1980583ddda52ad4da2c35f7b317475776c0af9b86a269113fd3e.png" title=" Then the result should be 'tabu bar' (completed)" width="1366"/>
+                <img src="2690eaf25cf1980583ddda52ad4da2c35f7b317475776c0af9b86a269113fd3e.png" title=" Then He verify that the word &quot;tabu bar&quot; is in the results (completed)" width="1366"/>
+                <img src="2690eaf25cf1980583ddda52ad4da2c35f7b317475776c0af9b86a269113fd3e.png" title=" Example #2: {word=tabu, wordtwo=bar, expectedValue=tabu bar} (completed)" width="1366"/>
+                <img src="c71a448366bc1e17ecacc08a929f58b3ae05b3eae4e73590b5e5f68b25afae55.png" title=" Example #3: {word=sociales, wordtwo=5, expectedValue=sociales}" width="1366"/>
+                <img src="c71a448366bc1e17ecacc08a929f58b3ae05b3eae4e73590b5e5f68b25afae55.png" title=" Given Goku is in the site yahoo" width="1366"/>
+                <img src="c71a448366bc1e17ecacc08a929f58b3ae05b3eae4e73590b5e5f68b25afae55.png" title=" GokuFase3 opens the Yahoo home page" width="1366"/>
+                <img src="c71a448366bc1e17ecacc08a929f58b3ae05b3eae4e73590b5e5f68b25afae55.png" title=" Given Goku is in the site yahoo (completed)" width="1366"/>
+                <img src="c71a448366bc1e17ecacc08a929f58b3ae05b3eae4e73590b5e5f68b25afae55.png" title=" When He search the word
+| cadenaUno | cadenaDos |
+| sociales | 5 |" width="1366"/>
+                <img src="c71a448366bc1e17ecacc08a929f58b3ae05b3eae4e73590b5e5f68b25afae55.png" title=" Gokufase3 look up something" width="1366"/>
+                <img src="c71a448366bc1e17ecacc08a929f58b3ae05b3eae4e73590b5e5f68b25afae55.png" title=" GokuFase3 enters 'sociales 5' into The search bar" width="1366"/>
+                <img src="b4dd863462c87773e00f529f1e0f8c6962774b8c82260dc2036d1907236a1d3c.png" title=" GokuFase3 enters 'sociales 5' into The search bar (completed)" width="1366"/>
+                <img src="b4dd863462c87773e00f529f1e0f8c6962774b8c82260dc2036d1907236a1d3c.png" title=" GokuFase3 clicks on The search button" width="1366"/>
+                <img src="04c292cb17d340369daa4ef6fb92b2b1462cc017ddb9b569f5802242bb4db670.png" title=" GokuFase3 clicks on The search button (completed)" width="1366"/>
+                <img src="04c292cb17d340369daa4ef6fb92b2b1462cc017ddb9b569f5802242bb4db670.png" title=" Gokufase3 look up something (completed)" width="1366"/>
+                <img src="04c292cb17d340369daa4ef6fb92b2b1462cc017ddb9b569f5802242bb4db670.png" title=" When He search the word
+| cadenaUno | cadenaDos |
+| sociales | 5 | (completed)" width="1366"/>
+                <img src="04c292cb17d340369daa4ef6fb92b2b1462cc017ddb9b569f5802242bb4db670.png" title=" Then He verify that the word &quot;sociales&quot; is in the results" width="1366"/>
+                <img src="04c292cb17d340369daa4ef6fb92b2b1462cc017ddb9b569f5802242bb4db670.png" title=" Then the result should be 'sociales'" width="1366"/>
+                <img src="04c292cb17d340369daa4ef6fb92b2b1462cc017ddb9b569f5802242bb4db670.png" title=" Then the result should be 'sociales' (completed): <span class='failing-color'>FAILURE</span>" width="1366"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 2.0.41</span>
+</div>
+</body>
+</html>
