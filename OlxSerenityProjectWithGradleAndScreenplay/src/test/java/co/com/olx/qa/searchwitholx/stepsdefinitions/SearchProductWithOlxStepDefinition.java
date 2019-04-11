@@ -23,13 +23,11 @@ import java.util.List;
 import co.com.olx.qa.searchwitholx.models.SearchGeneral;
 import co.com.olx.qa.searchwitholx.models.SearchWithFilter;
 import co.com.olx.qa.searchwitholx.exceptions.ProductNotFound;
+import co.com.olx.qa.searchwitholx.interactions.FilterUse;
 import co.com.olx.qa.searchwitholx.questions.TheProduct;
 import co.com.olx.qa.searchwitholx.questions.TheRandomProduct;
 import co.com.olx.qa.searchwitholx.tasks.FilterCategory;
-import co.com.olx.qa.searchwitholx.tasks.FilterCity;
 import co.com.olx.qa.searchwitholx.tasks.FilterDepartment;
-import co.com.olx.qa.searchwitholx.tasks.FilterPrice;
-import co.com.olx.qa.searchwitholx.tasks.FilterSubCategory;
 import co.com.olx.qa.searchwitholx.tasks.SpecificProductSearch;
 
 public class SearchProductWithOlxStepDefinition {
@@ -64,11 +62,7 @@ public class SearchProductWithOlxStepDefinition {
 
 	@Given("^Lucho applies filters to search results$")
 	public void luchoAppliesFiltersToSearchResults(List<SearchWithFilter> searchWithFilters) {
-		lucho.attemptsTo(FilterDepartment.applyToSearchResults(searchWithFilters.get(CURRENT_USER)));
-		lucho.attemptsTo(FilterCity.applyToSearchResults(searchWithFilters.get(CURRENT_USER)));
-		lucho.attemptsTo(FilterCategory.applyToSearchResults(searchWithFilters.get(CURRENT_USER)));
-		lucho.attemptsTo(FilterSubCategory.applyToSearchResults(searchWithFilters.get(CURRENT_USER)));
-		lucho.attemptsTo(FilterPrice.applyToSearchResults(searchWithFilters.get(CURRENT_USER)));
+		lucho.attemptsTo(FilterUse.applyToSearchResults(searchWithFilters.get(CURRENT_USER)));
 	}
 
 	@When("^he search the specific product \"([^\"]*)\"$")
