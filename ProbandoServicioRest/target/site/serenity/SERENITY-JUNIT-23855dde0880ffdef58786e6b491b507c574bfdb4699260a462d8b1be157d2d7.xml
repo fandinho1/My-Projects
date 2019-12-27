@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite errors="0" failures="1" name="Service Rest post" skipped="0" tests="1" time="5.22" timestamp="2019-12-26 02:36:41"><testcase name="Register user example"><failure message="El usuario no pudo ser registrado - &#10;Expected: is &quot;201&quot;&#10;     but: was &quot;200&quot;" type="java.lang.AssertionError">El usuario no pudo ser registrado - 
-Expected: is "201"
-     but: was "200"</failure><system-err>El usuario no pudo ser registrado - 
-Expected: is "201"
-     but: was "200"&#13;
-com.demoqa.restapi.stepsdefinitions.ServicioRestPostStepDefinition.theStatusCodeOfThePageIs(ServicioRestPostStepDefinition.java:34)&#13;
-✽.the status code of the page is 201(src/test/resources/features/servicio_rest_post.feature:11)&#13;
-</system-err></testcase></testsuite>
