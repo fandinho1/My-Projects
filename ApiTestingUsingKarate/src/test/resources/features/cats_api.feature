@@ -49,5 +49,3 @@ Feature: As a tester I want to test the api cats
     Examples:
       | idVote |
       | 173338 |
-
-    
