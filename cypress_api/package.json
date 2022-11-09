@@ -1,0 +1,14 @@
+{
+  "name": "cypress_api_testing",
+  "version": "1.0.0",
+  "description": "Pruebas de api con cypress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Luis Fandiño",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^11.0.0"
+  }
+}
