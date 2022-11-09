@@ -1,0 +1,18 @@
+npm init ->> para crear el package json
+npm install cypress --save-dev  ->> instalar cypress
+npx cypress open ->> abrir cypress
+npx cypress run --headed ->> correr los tcs desde el navegador
+npx cypress run --browser chrome
+npx cypress run --spec "cypress\e2e\section_1\RadioButtonsPage.cy.js"
+npx cypress run --spec "cypress\e2e\section_1\*"
+
+
+------------ CUCUMBER -------------
+npm run build
+npm run watch
+
+npm run test:fmt
+npm run test:types
+npm run test:unit
+npm run test:integration # make sure to build first
+npm run test # runs all of the above

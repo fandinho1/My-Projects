@@ -1,0 +1,20 @@
+{
+  "name": "cypress_project",
+  "version": "1.0.0",
+  "description": "My project of cypress 2022",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@4tw/cypress-drag-drop": "^2.2.1",
+    "@cypress/xpath": "^2.0.3",
+    "@deepsquare/cypress-iframe": "^2.0.2",
+    "cypress": "^10.11.0",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-iframe": "^1.0.1",
+    "cypress-plugin-tab": "^1.0.5"
+  }
+}
