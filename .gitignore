@@ -110,3 +110,10 @@ reports
 
 # Mac OS
 .DS_Store
+
+# Ignore Allure reports
+allure-results/
+allure-report/
+
+# Ignore specific Allure files
+*.allure
