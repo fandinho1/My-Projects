@@ -6,6 +6,9 @@ out/
 # Gradle files
 .gradle
 build/
+!/gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
 
 # Compiled class file
 *.class
@@ -16,8 +19,10 @@ build/
 # IntelliJ
 *.iml
 *.iws
+*.ipr
 .idea/
-!/gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/out/
+!**/src/test/**/out/
 
 # Libraries
 *.lib
@@ -41,9 +46,22 @@ build/
 target/
 
 # Eclipse
+.apt_generated
 .classpath
+.factorypath
 .project
-.settings/
+.settings
+.springBeans
+.sts4-cache
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
 
 # Mac
 .DS_Store
@@ -61,9 +79,6 @@ dist/
 # Maven
 target/
 dist/
-
-# JetBrains IDE
-.idea/
 
 # Unit test reports
 TEST*.xml
@@ -89,3 +104,9 @@ Thumbs.db
 
 # Cucumber Report
 reports
+
+# VS Code
+.vscode/
+
+# Mac OS
+.DS_Store
