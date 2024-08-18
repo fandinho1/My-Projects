@@ -1,0 +1,39 @@
+plugins {
+    id 'java'
+    id 'eclipse'
+    id 'io.qameta.allure' version '2.12.0' 
+}
+
+repositories{
+    mavenCentral()
+}
+
+dependencies {
+	testImplementation 'org.junit.platform:junit-platform-suite:1.11.0'
+
+    implementation 'org.junit.jupiter:junit-jupiter-api:5.11.0'
+	testRuntimeOnly  'org.junit.jupiter:junit-jupiter-engine:5.11.0'
+	
+	testImplementation  'io.cucumber:cucumber-junit-platform-engine:7.18.1'
+	testImplementation  'io.cucumber:cucumber-java:7.18.1'
+    implementation 'org.seleniumhq.selenium:selenium-java:4.23.1'
+    implementation 'commons-io:commons-io:2.16.1'
+    
+    implementation 'io.qameta.allure:allure-cucumber7-jvm:2.29.0'
+    implementation 'io.qameta.allure:allure-junit5:2.29.0'
+    
+	implementation 'org.apache.commons:commons-csv:1.11.0'
+    
+}
+
+
+test {
+    useJUnitPlatform()
+    systemProperty 'browser', System.getProperty('browser','chrome')
+}
+
+allure {
+    version = '2.29.0'
+    autoconfigure = true
+    aspectjweaver = true
+}
