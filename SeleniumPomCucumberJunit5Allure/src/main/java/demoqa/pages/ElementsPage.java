@@ -9,6 +9,9 @@ public class ElementsPage extends BasePage {
 
 	@FindBy(xpath = "//span[text()='Text Box']")
 	private WebElement textBoxLink;
+	
+	@FindBy(xpath = "//span[text()='Web Tables']")
+	private WebElement webTablesLink;
 
 	public ElementsPage(WebDriver webDriver) {
 		super(webDriver);
@@ -20,6 +23,13 @@ public class ElementsPage extends BasePage {
 			return textBoxLink.isDisplayed();
 		});
 		textBoxLink.click();
+	}
+	
+	public void goToWebTablesPage() {
+		webDriverWait.until(element -> {
+			return webTablesLink.isDisplayed();
+		});
+		webTablesLink.click();
 	}
 
 }

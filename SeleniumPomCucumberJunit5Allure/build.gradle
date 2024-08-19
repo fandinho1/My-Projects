@@ -23,7 +23,7 @@ dependencies {
     implementation 'io.qameta.allure:allure-junit5:2.29.0'
     
 	implementation 'org.apache.commons:commons-csv:1.11.0'
-    
+	implementation 'com.fasterxml.jackson.core:jackson-databind:2.17.2'
 }
 
 
