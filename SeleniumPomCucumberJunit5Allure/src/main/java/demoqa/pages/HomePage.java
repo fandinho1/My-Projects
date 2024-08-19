@@ -12,6 +12,9 @@ public class HomePage extends BasePage{
 	@FindBy(xpath = "//h5[text()='Elements']")
 	private WebElement elementsLink;
 	
+	@FindBy(xpath = "//h5[text()='Forms']")
+	private WebElement formsLink;
+	
 	public HomePage(WebDriver driver) {
 		super(driver);
 		PageFactory.initElements(driver, this);
@@ -23,6 +26,10 @@ public class HomePage extends BasePage{
 	
 	public void goToElementsPage() {
 		elementsLink.click();
+	}
+	
+	public void goToFormsPage() {
+		formsLink.click();
 	}
 
 }
