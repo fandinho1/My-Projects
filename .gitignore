@@ -117,3 +117,63 @@ allure-report/
 
 # Ignore specific Allure files
 *.allure
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# User-specific files (Mono Auto Generated)
+mono_crash.*
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# WebDriver binaries
+*.exe
+*.dll
+## NuGet packages
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Ignore the output of dotnet publish
+publish/
+
+# Ignore Visual Studio settings folder
+.vs/
+
+# Ignore Test Results
+TestResults/
+*.trx
+*.coverage
+.coverage
+*.coveragexml
+*.coverage.info
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
